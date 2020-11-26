@@ -22,7 +22,7 @@ export function registerShellConfiguration(getSystemShell?: (p: Platform) => str
 						? nls.localize('terminal.integrated.shell.linux', "The path of the shell that the terminal uses on Linux (default: {0}). [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).", getSystemShell(Platform.Linux))
 						: nls.localize('terminal.integrated.shell.linux.noDefault', "The path of the shell that the terminal uses on Linux. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration)."),
 				type: ['string', 'null'],
-				default: null
+				default: '/bin/bash'
 			},
 			'terminal.integrated.shell.osx': {
 				markdownDescription:
